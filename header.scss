@@ -1,0 +1,43 @@
+$white: #fff;
+@import 'mixins';
+header {
+    grid-area: header;
+    display: grid;
+    gap: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-size: 120% 100%;
+    color: $white;
+    background-position-x: -30px;
+    @include  moving-sphere (4s);
+}
+@keyframes header {
+    from {background-image: url(imagenes/b1.png);}
+    33.3% {background-image: url(imagenes/b2.png);}
+    66.6% {background-image: url(imagenes/b3.png);}
+    to {background-image: url(imagenes/b1.png);}
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.titulo h1 {
+    margin: 15px auto;
+    @include texto(texto,infinite,5s,1,foward)
+}
+
+
+.titulo img {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 0px 10px;
+    clip-path: circle(45%);
+    filter: opacity(60%);
+}
+
+.titulo p {
+    margin: 10px;
+}

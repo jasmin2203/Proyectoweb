@@ -1,0 +1,13 @@
+@import 'header';
+@import 'nav';
+@import 'main';
+@import 'footer';
+
+body {
+	display: grid;
+	grid-template-rows: auto;
+	grid-auto-columns: 1fr;
+	gap: 10px;
+	grid-template-areas: "header" "nav   ""main  ""footer";
+}
+

@@ -1,0 +1,112 @@
+@-webkit-keyframes texto {
+  from {
+    opacity: 0;
+  }
+  30% {
+    opacity: 100%;
+  }
+  60% {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes texto {
+  from {
+    opacity: 0;
+  }
+  30% {
+    opacity: 100%;
+  }
+  60% {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+header {
+  grid-area: header;
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-size: 120% 100%;
+  color: #fff;
+  background-position-x: -30px;
+  -webkit-animation-name: header;
+          animation-name: header;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes header {
+  from {
+    background-image: url(imagenes/b1.png);
+  }
+  33.3% {
+    background-image: url(imagenes/b2.png);
+  }
+  66.6% {
+    background-image: url(imagenes/b3.png);
+  }
+  to {
+    background-image: url(imagenes/b1.png);
+  }
+}
+
+@keyframes header {
+  from {
+    background-image: url(imagenes/b1.png);
+  }
+  33.3% {
+    background-image: url(imagenes/b2.png);
+  }
+  66.6% {
+    background-image: url(imagenes/b3.png);
+  }
+  to {
+    background-image: url(imagenes/b1.png);
+  }
+}
+
+.titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 10px;
+}
+
+.titulo h1 {
+  margin: 15px auto;
+  -webkit-animation: texto infinite 5s;
+          animation: texto infinite 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: foward;
+          animation-fill-mode: foward;
+}
+
+.titulo img {
+  width: 50px;
+  height: auto;
+  display: block;
+  margin: 0px 10px;
+  -webkit-clip-path: circle(45%);
+          clip-path: circle(45%);
+  -webkit-filter: opacity(60%);
+          filter: opacity(60%);
+}
+
+.titulo p {
+  margin: 10px;
+}
+/*# sourceMappingURL=header.css.map */

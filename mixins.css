@@ -1,0 +1,29 @@
+@-webkit-keyframes texto {
+  from {
+    opacity: 0;
+  }
+  30% {
+    opacity: 100%;
+  }
+  60% {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes texto {
+  from {
+    opacity: 0;
+  }
+  30% {
+    opacity: 100%;
+  }
+  60% {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=mixins.css.map */

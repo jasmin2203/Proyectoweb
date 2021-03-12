@@ -1,0 +1,75 @@
+$lightblue:#add8e6;
+$blue:#3498DB;
+$white:#fff;
+
+main {
+	grid-area: main;
+	font-family: 'Courier New', Courier, monospace;
+}
+form {
+	width: 55%;
+	padding: 30px 50px;
+	margin: auto;
+	background-color: $lightblue;
+	position: relative;
+}
+fieldset {
+	div {
+		margin: 10px;
+	}
+}
+.radios {
+	display: inline-block;
+	margin: 0px;
+}
+.inp {
+	position: absolute;
+	left: 350px;
+	&:focus {
+		outline: 0;
+		border-radius: 10px;
+		border: 2px solid $blue;
+		transition: all 0.1s ease;
+	}
+}
+#validar {
+	position: absolute;
+	left: 550px;
+	&:hover {
+		color:$white;
+		background-color: $blue;
+		padding: 2px 10px;
+		transition: all 0.2s ease;
+	}
+	&:active {
+		background-color: $lightblue;
+		transition: all ease;
+	}
+}
+.descripcion {
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+	textarea {
+		resize: none;
+	}
+}
+.gl {
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	button {
+		margin: 5px 25px;
+		padding: 3px;
+		&:hover {
+			color: $white;
+			background-color: $blue;
+			padding: 5px 10px;
+			transition: all 0.2s ease;
+		}
+		&:active {
+			background-color: $lightblue;
+			transition: all ease;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+@mixin moving-sphere( $duration) {
+    animation-name: header;
+    animation-duration: $duration;
+    animation-iteration-count: infinite;
+  }
+ @mixin texto($fade,$timing,$leght,$count,$fill)
+ {
+     animation: $fade $timing $leght;
+     animation-iteration-count: $count;
+     animation-fill-mode: $fill;
+ }
+ @keyframes texto {
+    from {opacity: 0;}
+    30% {opacity: 100%;}
+    60% {opacity: 100%;}
+    to {opacity: 0;}
+}
